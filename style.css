@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Epunda+Slab:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #ff8913;
+    --text-color: #82979b;
+}
+
+html{
+    font-size: 10px;
+}
+
+body {
+    font-family: Inter, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+/* Common Styles */
+
+img{
+    width: 100%
+}
+
+a{
+    text-decoration: none;
+    color: white
+}
+.profile_description{
+
+    color: var(--text-color);
+    font-weight: 400;
+    
+    font-size: 1.5rem;
+}
+
+.group-1{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+
+.title{
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 2rem;
+   
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.item_preTitle{
+    color: var(--text-color);
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+.item_title{
+    font-weight: 500px;
+    font-size: 1.7rem;
+    margin: 5px 0;
+    margin-bottom: 0.5rem;
+}
+.item_subTitle{
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+
+.group-2{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.group-3{
+    display: flex;
+    max-width: 700px;
+    width : 100%;
+    margin: 0 auto;
+    grid-column: 1 / -1 ;
+    gap: 5rem;
+}
+
+.group-3>div{
+    flex: 1;
+}
+/* layouts */
+
+.container{
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 5rem;
+    display: grid;
+    background-color: #070707;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem
+}
+
+/* profile */
+
+.profile{
+    grid-column: 1 / -1;
+    margin: 2rem;
+}
+
+.profile_image{
+    max-width: 250px;
+}
+.profile_image img{
+    
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    margin-top: 0%;
+
+}
+
+.profile_container{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.profile_name_firstName{
+
+    color: white;
+    font-weight: 200;
+    font-size: clamp(2rem, 4vw, 4rem);
+    text-transform: uppercase;
+    display: block;
+}
+.profile_name_lastName{
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: clamp(2.5rem, 17vw, 7rem);
+    text-transform: uppercase;
+    display: block;
+}
+
+.profile_title{
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 0.09rem;
+    text-transform: uppercase;
+}
+
+.download_pdf{
+    display: block;
+    text-decoration: underline;
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.download_pdf:hover{
+    color: var(--primary-color);
+}
+
+/* Group-1 */
+/* skills */
+
+.skills_list{
+    margin-top: 1rem;
+    margin-left: 1rem;
+    line-height: 2;
+}
+
+/* education */
+
+.edu_item{
+    margin-top: 2rem;
+}
+
+
+/* certifications */
+
+.certificate_item{
+    margin-top: 2rem;
+}
+
+/* experience */
+
+
+.exp_list li {
+    height: 6rem;
+}
+
+
+/* contacts */
+
+.contact_info p {
+    margin-bottom: 1.2rem;
+}
+
+/* socials */
+
+.social_items{
+    margin-top: 2rem;
+}
+
+.social_items a{
+    margin-top: 1rem;
+    display: flex;
+    font-size: 1.5rem;
+    align-items: center;    
+    gap: .5rem;
+    justify-content: flex-start;
+    color: var(--text-color)
+}
+
+.social_items a:hover{
+    color: var(--primary-color);
+}
+
+hr{
+    grid-column: 1 / -1 ;
+    border: 0 auto;
+
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+}
