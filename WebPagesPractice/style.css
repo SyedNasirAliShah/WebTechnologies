@@ -101,6 +101,7 @@ nav ul li:last-child a:hover {
 .description{
     margin: 2rem 0;
     line-height: 1.6;
+    text-align: center;
 }
 
 
