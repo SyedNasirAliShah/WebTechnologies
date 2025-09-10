@@ -25,6 +25,15 @@ body{
     border-bottom: 2px solid #f39c12;
 }
 
+.section2{
+    padding-bottom: 40px;
+    border-bottom: 2px solid orange;
+}
+
+.section3{
+    padding-bottom: 40px;
+    border-bottom: 2px solid orange;
+}
 
 
 /* headers layouts */
@@ -40,7 +49,7 @@ body{
     border-bottom: 2px solid #f39c12; 
 }
 .title {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
   color: #f39c12;
 }
@@ -119,4 +128,129 @@ nav ul li:last-child a:hover {
     justify-content: center; 
     text-align: center; 
     height: 100%;
+}
+
+
+
+/* section2 */
+
+.section2 .title{
+    text-align: center;
+    margin-top: 2rem;
+    color: black;
+}
+
+.pricing-row{
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+
+}
+
+.plan{
+    border: 1px solid #f39c12;
+    border-radius: 8px;
+    /* padding: 1.5rem; */
+    width: 180px;
+    box-shadow: 0 2px 8px rgba(243, 156, 18, 0.08);
+    text-align: center;
+    padding-bottom: 0.5rem;
+}
+
+.plan h2 {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.plan1 h2{
+    border-bottom: 1px solid #f39c12;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+.pricing-row .plan:last-child .plan1 h2{
+    background-color: orange;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.plan p {
+    /* color: #6a626e; */
+    font-size: 1rem;
+    line-height: 1.3;
+    margin: 0 0.5rem;
+}
+button{
+    margin-top: 1rem;
+}
+.pricing-row .plan:first-child .plan-btn {
+    background: #fff;
+    color: black;
+    border: 2px solid #f39c12;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: lightgray;
+    transition: background 0.3s, color 0.3s;
+}
+
+.plan-btn {
+    background: #f39c12;
+    color: #fff;
+    border: 2px solid #f39c12;
+    padding: 6px 16px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+    margin-top: 1rem;
+    width: 150px;
+    text-align: center;
+}
+
+.plan-btn:hover {
+    background: #fff;
+    color: #f39c12;
+}
+
+
+/* section3 */
+
+.content h1{
+    text-align: center;
+    margin-top: 2rem;
+    color: black;
+}
+
+.table{
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+    margin: auto;
+}
+.tableContent{
+    margin-top:35px;
+}
+
+.table th, .table td{
+    padding: 5px 20px;
+    text-align: center;
+}
+
+.table td:first-child{
+    padding: 0;
+    font-weight: bold;
+    text-align: left;
+}
+
+.table td:last-child{
+    padding-left: 10%; 
+    padding-right: 0px;
+    text-align: center;
+}
+.table th:last-child{
+    padding: 0;
+    text-align: right;
+}
+.table tr{
+    border-bottom: 2px solid #f31212;
 }
